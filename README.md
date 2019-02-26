@@ -6,7 +6,9 @@
     <h4>How to use:</h4>
       <p>Select tracks that you want to color (you don`t have to unselect parent tracks) > run the script </p>
       
-      ![set_track_color_github](https://github.com/jmieszkowski/ReaScripts/blob/master/gifs/set_track_color_github.gif)
+      ![set_track_color_github](https://user-images.githubusercontent.com/44314566/53447025-8c5a5d00-3a14-11e9-8c82-a0445de08e7b.gif)
+
+
       
       
       
