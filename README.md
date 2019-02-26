@@ -5,7 +5,7 @@
     <h4> Script colors selected tracks to their parent track`s color</h4>
     <h4>How to use:</h4>
       <p>Select tracks that you want to color (you don`t have to unselect parent tracks) > run the script </p>
-      ![Alt Text](https://github.com/jmieszkowski/ReaScripts/raw/master/gifs/set_track_color_github.gif)
+      ![Alt Text](https://gifyu.com/image/3xKd)
         
 
 
