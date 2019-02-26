@@ -1,11 +1,11 @@
 # ReaScripts
-<p>Scripts for Reaper DAW</p>
+Scripts for Reaper DAW
 
-<h3> 1. Set the color of selected tracks from their parent tracks </h3>
-    <h4> Script colors selected tracks to their parent track`s color</h4>
-    <h4>How to use:</h4>
-      <p>Select tracks that you want to color (you don`t have to unselect parent tracks) > run the script </p>
-      ![Alt Text](https://gifyu.com/image/3xKd)
+## 1. Set the color of selected tracks from their parent tracks 
+    ### Script colors selected tracks to their parent track`s color
+   #### How to use:
+     Select tracks that you want to color (you don`t have to unselect parent tracks) > run the script 
+![Alt Text](https://github.com/jmieszkowski/ReaScripts/blob/master/gifs/set_track_color_github.gif)
         
 
 
@@ -13,8 +13,8 @@
       
       
 
-<h3> 2. Create folders from selected tracks </h3>
-    <h4> Script groups selected tracks according to thier names</h4>
-    <h4>How to use:</h4>
-    <p>Select tracks that you want to group > run the script </p>
+## 2. Create folders from selected tracks 
+    ### Script groups selected tracks according to thier names</h4>
+    #### How to use:</h4>
+   Select tracks that you want to group > run the script
      
