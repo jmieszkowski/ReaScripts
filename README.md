@@ -58,7 +58,7 @@ e.g. if you want to set name of vocals parent track to for example "VOX". You ju
 
 ##### Adding your own table
 You are able to create your own table, and that means you will have new folder of tracks, which track name matched words from this table. 
-####### The syntax is:
+###### The syntax is:
 ```lua
     name_of_the_table = {"word1", "word2", "word3"}
 ```
@@ -85,5 +85,6 @@ This is not the end yet. Last think you have to do is actually call function, wh
   
 ```
  And thats all!
+
      
 
