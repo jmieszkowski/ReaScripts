@@ -37,7 +37,7 @@ e.g. You want to add tracks with name "KCK" to "DRUMS" folder, but it is not cur
 ##### Important things:
 script does not use full-match, it is more like "does the track name contains this word?".
 e.g. if track name is kick12345-abcdefg-159846 it will match with "kick" from namesOfDrumTracks.
-So if you add for example "T" as a word in same table, it would not work correctly, because it will match any track name which contains "T". Size of letters doesn not matter
+So if you add for example "T" as a word in same table, it would not work correctly, because it will match any track name which contains "T". Size of letters does not matter
 
 ##### Changing name of created folder
 After defining tables, there is a section, where names of folder(parent) tracks are defined.
@@ -55,6 +55,20 @@ e.g. if you want to set name of vocals parent track to for example "VOX". You ju
 ```lua
      vocalsParentTrackName = "VOX"
 ```
+
+##### Changing color of the folder
+You can change colors of folders in this section. Colors are set in RGB value. You can check RGB value for specific color online. For example: https://www.rapidtables.com/web/color/RGB_Color.html 
+```lua
+  guitarsColor = reaper.ColorToNative(222,255,11)
+  stringsColor = reaper.ColorToNative(255,184,16)
+  loopsColor   = reaper.ColorToNative(192,16,255)
+  synthsColor  = reaper.ColorToNative(16,255,255)
+  pianosColor  = reaper.ColorToNative(255,192,16)
+  bassesColor  = reaper.ColorToNative(16,16,255)
+  drumsColor   = reaper.ColorToNative(253,0,0)
+  vocalsColor  = reaper.ColorToNative(11,255,36)
+```
+
 
 ##### Adding your own table
 You are able to create your own table, and that means you will have new folder of tracks, which track name matched words from this table. 
