@@ -14,8 +14,8 @@ Scripts for Reaper DAW
       
       
 
-## 2. Create folders from selected tracks 
-    Script groups selected tracks according to thier names
+## 2. Create folders from selected tracks based on their names and color them
+    Script groups selected tracks according to thier names and colors them
    #### How to use:
     Select tracks that you want to group > run the script
     
@@ -70,18 +70,25 @@ And then you have to create variable containing name of parent track. Just add i
 ```lua
     coolestGuysParentTrackName = "COOLEST GUYS"
 ```
-This is not the end yet. Last think you have to do is actually call function, which creates the folder with your tracks. Just find this section of code and add your code as i did below
+
+Now you have to create variable containing color (in RGB) of this folder. In this example its red.
 ```lua
-  createFolder(tracksIndexesThatUserSelected, namesOfStringTracks, stringsParentTrackName)
-  createFolder(tracksIndexesThatUserSelected, namesOfLoopsTracks, loopsParentTrackName)
-  createFolder(tracksIndexesThatUserSelected, namesOfSynthTracks, synthsParentTrackName)
-  createFolder(tracksIndexesThatUserSelected, namesOfPianoTracks, pianosParentTrackName)
-  createFolder(tracksIndexesThatUserSelected, namesOfGuitarTracks, guitarsParentTrackName)
-  createFolder(tracksIndexesThatUserSelected, namesOfBassTracks, bassParentTrackName)
-  createFolder(tracksIndexesThatUserSelected, namesOfDrumTracks, drumsParentTrackName)
-  createFolder(tracksIndexesThatUserSelected, namesOfVocalTracks, vocalsParentTrackName)
-  --            don`t change it!                name of table           name of parent track
-  createFolder(tracksIndexesThatUserSelected, theCoolestGuysYouKnow, coolestGuysParentTrackName)
+    coolestGuysColor = reaper.ColorToNative(253,0,0)
+```
+
+This is not the end yet. Last think you have to do is actually call function, which creates the folder with your tracks. Just find this section of code and add your code as i did below
+
+```lua  
+  createFolder(tracksIndexesThatUserSelected, namesOfStringTracks, stringsParentTrackName, stringsColor)
+  createFolder(tracksIndexesThatUserSelected, namesOfLoopsTracks, loopsParentTrackName, loopsColor)
+  createFolder(tracksIndexesThatUserSelected, namesOfSynthTracks, synthsParentTrackName, synthsColor)
+  createFolder(tracksIndexesThatUserSelected, namesOfPianoTracks, pianosParentTrackName, pianosColor)
+  createFolder(tracksIndexesThatUserSelected, namesOfGuitarTracks, guitarsParentTrackName, guitarsColor)
+  createFolder(tracksIndexesThatUserSelected, namesOfBassTracks, bassParentTrackName, bassesColor)
+  createFolder(tracksIndexesThatUserSelected, namesOfDrumTracks, drumsParentTrackName, drumsColor)
+  createFolder(tracksIndexesThatUserSelected, namesOfVocalTracks, vocalsParentTrackName, vocalsColor)
+  --            don`t change it!                name of table           name of parent track    color of the folder
+  createFolder(tracksIndexesThatUserSelected, theCoolestGuysYouKnow, coolestGuysParentTrackName, coolestGuysColor)
   
 ```
  And thats all! Enjoy!
