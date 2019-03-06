@@ -69,6 +69,11 @@ You can change colors of folders in this section. Colors are set in RGB value. Y
   vocalsColor  = reaper.ColorToNative(11,255,36)
 ```
 
+e.g. if you want to change drums folder color from red to blue just edit the values
+```lua
+    drumsColor   = reaper.ColorToNative(44,44,255)
+```
+
 
 ##### Adding your own table
 You are able to create your own table, and that means you will have new folder of tracks, which track name matched words from this table. 
